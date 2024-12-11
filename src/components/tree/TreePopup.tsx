@@ -9,11 +9,22 @@ interface TreePopupProps {
 
 function TreePopup({ tree, onClose, onReadMore }: TreePopupProps) {
   const handleReadMore = () => {
-    const element = document.getElementById('tree-list');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      onReadMore(tree.id);
-    }
+    onReadMore(tree.id);
+    
+    // Add a small delay to ensure the tree details are expanded
+    setTimeout(() => {
+      const treeElement = document.getElementById(`tree-${tree.id}`);
+      if (treeElement) {
+        const headerHeight = 100; // Approximate header height
+        const elementPosition = treeElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   return (

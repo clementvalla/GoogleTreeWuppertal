@@ -23,7 +23,7 @@ function TreeList({ trees, onTreeSelect, expandedTreeId, onTreeExpand }: TreeLis
       
       <div className="divide-y divide-black">
         {trees.map((tree) => (
-          <div key={tree.id}>
+          <div key={tree.id} id={`tree-${tree.id}`}>
             <TreeCard
               tree={tree}
               onClick={() => handleTreeClick(tree)}
