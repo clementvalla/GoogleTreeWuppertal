@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Tree } from '../../types/tree';
 import { MapService } from '../../utils/map/mapService';
+import SchwebebahnStations from './SchwebebahnStations';
 
 interface MapProps {
   trees: Tree[];
@@ -11,6 +12,7 @@ function Map({ trees, onTreeSelect }: MapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapServiceRef = useRef<MapService | null>(null);
   const isInitializedRef = useRef(false);
+  const [googleMap, setGoogleMap] = useState<google.maps.Map | null>(null);
 
   useEffect(() => {
     const mapElement = mapRef.current;
@@ -23,6 +25,7 @@ function Map({ trees, onTreeSelect }: MapProps) {
         const mapService = new MapService();
         await mapService.initialize(mapElement, trees, onTreeSelect);
         mapServiceRef.current = mapService;
+        setGoogleMap(mapService.getMap());
       } catch (error) {
         console.error('Error initializing map:', error);
       }
@@ -36,6 +39,7 @@ function Map({ trees, onTreeSelect }: MapProps) {
         mapServiceRef.current = null;
       }
       isInitializedRef.current = false;
+      setGoogleMap(null);
     };
   }, []); // Empty dependency array means this only runs once on mount
 
@@ -46,7 +50,11 @@ function Map({ trees, onTreeSelect }: MapProps) {
     }
   }, [trees, onTreeSelect]);
 
-  return <div ref={mapRef} className="w-full h-[600px] shadow-lg" />;
+  return (
+    <div ref={mapRef} className="w-full h-[600px] shadow-lg">
+      {googleMap && <SchwebebahnStations map={googleMap} />}
+    </div>
+  );
 }
 
 export default Map;

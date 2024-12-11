@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import Header from '../components/layout/Header';
 import Map from '../components/map/Map';
@@ -11,8 +11,38 @@ function Home() {
   const [selectedTree, setSelectedTree] = useState<Tree | null>(null);
   const [expandedTreeId, setExpandedTreeId] = useState<string | null>(null);
 
+  // Handle initial hash and hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1); // Remove the # symbol
+      if (hash) {
+        const tree = trees.find(t => t.id === hash);
+        if (tree) {
+          setSelectedTree(tree);
+        }
+      } else {
+        setSelectedTree(null);
+      }
+    };
+
+    // Handle initial hash on mount
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   const handleTreeSelect = (tree: Tree) => {
     setSelectedTree(tree);
+    // Update URL hash without page reload
+    window.history.pushState(null, '', `#${tree.id}`);
+  };
+
+  const handleTreeClose = () => {
+    setSelectedTree(null);
+    // Remove hash without page reload
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   const handleReadMore = (treeId: string) => {
@@ -32,7 +62,7 @@ function Home() {
         {selectedTree && (
           <TreePopup 
             tree={selectedTree} 
-            onClose={() => setSelectedTree(null)}
+            onClose={handleTreeClose}
             onReadMore={handleReadMore}
           />
         )}

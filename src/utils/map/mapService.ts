@@ -30,6 +30,10 @@ export class MapService {
     }
   }
 
+  getMap(): google.maps.Map | null {
+    return this.map;
+  }
+
   private createMarkers(trees: Tree[], onTreeSelect: (tree: Tree) => void): void {
     if (!this.map || !this.google) return;
     const google = this.google; // Local reference to avoid null checks

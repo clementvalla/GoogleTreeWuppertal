@@ -1,6 +1,29 @@
 // Center coordinates for Wuppertal map
 export const WUPPERTAL_CENTER = { lat: 51.259472, lng: 7.165083};
 
+// Schwebebahn stations coordinates
+export const SCHWEBEBAHN_STATIONS = [
+  { name: "Vohwinkel", lat: 51.2303, lng: 7.0677 },
+  { name: "Hammerstein", lat: 51.2364, lng: 7.0885 },
+  { name: "Bruch", lat: 51.2342, lng: 7.0770 },
+  { name: "Zoo/Stadion", lat: 51.2408, lng: 7.1032 },
+  { name: "Sonnborner Straße", lat: 51.2381, lng: 7.0968 },
+  { name: "Varresbecker Straße", lat: 51.2465, lng: 7.1069 },
+  { name: "Westende", lat: 51.2489, lng: 7.1185 },
+  { name: "Pestalozzistraße", lat: 51.2486, lng: 7.1255 },
+  { name: "Robert-Daum-Platz", lat: 51.2523, lng: 7.1343 },
+  { name: "Ohligsmühle", lat: 51.2553, lng: 7.1425 },
+  { name: "Wuppertal Hbf", lat: 51.2559, lng: 7.1484 },
+  { name: "Kluse", lat: 51.2557, lng: 7.1544 },
+  { name: "Landgericht", lat: 51.2580, lng: 7.1624 },
+  { name: "Völklinger Straße", lat: 51.2625, lng: 7.1741 },
+  { name: "Loher Brücke", lat: 51.2671, lng: 7.1813 },
+  { name: "Adlerbrücke", lat: 51.2670, lng: 7.1890 },
+  { name: "Alter Markt", lat: 51.2695, lng: 7.1980 },
+  { name: "Werther Brücke", lat: 51.2724, lng: 7.2067 },
+  { name: "Wupperfeld", lat: 51.2733, lng: 7.2137 },
+  { name: "Oberbarmen", lat: 51.2746, lng: 7.2233 }
+];
 
 // Schwebebahn route coordinates
 export const SCHWEBEBAHN_PATH = [

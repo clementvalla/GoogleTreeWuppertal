@@ -23,8 +23,8 @@ function SchwebebahnStations({ map }: SchwebebahnStationsProps) {
           fillColor: '#87E69B',
           fillOpacity: 1,
           strokeWeight: 0,
-          // Position label to start right at the dot's edge
-          labelOrigin: new google.maps.Point(6, 0)
+          // Position label much closer to the dot
+          labelOrigin: new google.maps.Point(0, 2.5)
         },
         label: {
           text: station.name,
