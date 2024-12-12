@@ -7,39 +7,43 @@ function About() {
       <Header />
 
       <div className="prose text-black">
-        <h2 className="text-white">ABOUT THE GOOGLE TREE</h2>
+        <h2 className="text-white">ÜBER DEN GOOGLE-BAUM</h2>
         <p>
-          The Google Trees is a series of life-size sculptures of trees plucked from Google
-          Maps. They reveal how ubiquitous technology filters our view of the natural
-          world.
+          Die Google Trees ist eine Serie lebensgroßer Baumskulpturen, die aus Google
+          Maps entnommen wurden. Sie zeigen, wie allgegenwärtige Technologie unseren
+          Blick auf die natürliche Welt filtert.
         </p>
         <p>
-          The project was conceived by Certain Measures, a design and technology studio
-          based in Berlin, with digital media artist Clement Valla. The Google Tree series
-          has been presented in Berlin, and will soon be installed in Pisa.
+          Das Projekt wurde von Certain Measures, einem Design- und Technologiestudio
+          in Berlin, zusammen mit dem digitalen Medienkünstler Clement Valla konzipiert.
+          Die Google Tree-Serie wurde bereits in Berlin präsentiert und wird demnächst in
+          Pisa installiert.
         </p>
         <p>
-          Google's tech creates a 3D model of our world, mostly focusing on buildings,
-          and ends up turning trees and the natural objects into weird, simplified shapes.
-          This sculpture brings one of those distorted digital trees to life, giving people a
-          chance to see up close something that's usually meant to be seen from way
-          above, like by a drone or satellite. The sculpture messes with how we normally
-          think of nature by showing us a tree that looks strange and unfamiliar, at a large
-          scale. It's meant to make you stop and think about how technology shapes the
-          way we see the world.
+          Googles Technologie erstellt ein 3D-Modell unserer Welt, wobei der Fokus
+          hauptsächlich auf Gebäuden liegt. Dabei werden Bäume und natürliche Objekte
+          in seltsame, vereinfachte Formen verwandelt. Diese Skulptur erweckt einen
+          dieser verzerrten digitalen Bäume zum Leben und gibt Menschen die
+          Möglichkeit, etwas aus der Nähe zu betrachten, das normalerweise nur aus
+          großer Höhe, wie von einer Drohne oder einem Satelliten, gesehen wird. Die
+          Skulptur spielt mit unserer gewohnten Wahrnehmung der Natur, indem sie uns
+          einen Baum zeigt, der fremd und ungewohnt erscheint, und das in
+          Lebensgröße. Sie soll uns zum Nachdenken darüber anregen, wie Technologie
+          unsere Sicht auf die Welt prägt.
         </p>
         <p>
-          The Google Tree also brings in a bit of humor to get people thinking about bigger
-          issues, like the climate crisis. By making you react to this strange, digital version
-          of a tree, the sculpture opens up questions about how much we rely on
-          technology and what that means for our future, especially when it comes to
-          nature. Is this digital tree a quirky mistake from our time, or a symbol of a
-          species we might lose?
+          Der Google-Baum bringt auch eine humorvolle Note ein, um Menschen zum
+          Nachdenken über größere Themen wie die Klimakrise anzuregen. Indem er uns
+          mit dieser seltsamen, digitalen Version eines Baumes konfrontiert, wirft die
+          Skulptur Fragen über unsere Technologieabhängigkeit auf und was diese für
+          unsere Zukunft bedeutet, besonders in Bezug auf die Natur. Ist dieser digitale
+          Baum nur eine kuriose Fehldarstellung unserer Zeit oder ein Symbol für eine
+          Art, die wir verlieren könnten?
         </p>
         <p>
-          In the end, the project encourages people to think about the gap between what
-          we see digitally and what we experience in real life, sparking a conversation
-          about technology, perception, and the environment.
+          Letztendlich regt das Projekt dazu an, über die Kluft zwischen digitaler
+          Wahrnehmung und realer Erfahrung nachzudenken und eröffnet einen Dialog
+          über Technologie, Wahrnehmung und Umwelt.
         </p>
 
         
