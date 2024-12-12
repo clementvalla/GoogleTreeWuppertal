@@ -5,10 +5,11 @@ import SchwebebahnStations from './SchwebebahnStations';
 
 interface MapProps {
   trees: Tree[];
+  selectedTree: Tree | null;
   onTreeSelect: (tree: Tree) => void;
 }
 
-function Map({ trees, onTreeSelect }: MapProps) {
+function Map({ trees, selectedTree, onTreeSelect }: MapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapServiceRef = useRef<MapService | null>(null);
   const isInitializedRef = useRef(false);
@@ -49,6 +50,13 @@ function Map({ trees, onTreeSelect }: MapProps) {
       mapServiceRef.current.updateMarkers(trees, onTreeSelect);
     }
   }, [trees, onTreeSelect]);
+
+  // Center map on selected tree
+  useEffect(() => {
+    if (mapServiceRef.current && selectedTree) {
+      mapServiceRef.current.centerOnTree(selectedTree);
+    }
+  }, [selectedTree]);
 
   return (
     <div ref={mapRef} className="w-full h-[600px] shadow-lg">

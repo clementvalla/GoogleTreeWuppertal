@@ -18,7 +18,7 @@ function TreeList({ trees, onTreeSelect, expandedTreeId, onTreeExpand }: TreeLis
   return (
     <section id="tree-list">
       <div className="border-t border-b border-black">
-        <h2 className="text-2xl font-normal my-6">Die Baumsammlung</h2>
+        <h2 className="text-xl sm:text-2xl font-normal my-4 sm:my-6">Die Baumsammlung</h2>
       </div>
       
       <div className="divide-y divide-black">
@@ -30,7 +30,7 @@ function TreeList({ trees, onTreeSelect, expandedTreeId, onTreeExpand }: TreeLis
               isExpanded={expandedTreeId === tree.id}
             />
             {expandedTreeId === tree.id && (
-              <div className="p-6 bg-gray-50">
+              <div className="p-3 sm:p-6 bg-gray-50">
                 <TreeDetails tree={tree} />
               </div>
             )}
@@ -39,7 +39,7 @@ function TreeList({ trees, onTreeSelect, expandedTreeId, onTreeExpand }: TreeLis
       </div>
 
       <div className="border-t border-black mt-0">
-        <p className="text-xs text-gray-400 mt-12 mb-8">
+        <p className="text-xs text-gray-400 mt-8 sm:mt-12 mb-6 sm:mb-8">
           © 2024 Freiluft, Certain Measures, und Clement Valla
         </p>
       </div>

@@ -19,9 +19,11 @@ function Home() {
         const tree = trees.find(t => t.id === hash);
         if (tree) {
           setSelectedTree(tree);
+          setExpandedTreeId(tree.id); // Expand the tree in the list
         }
       } else {
         setSelectedTree(null);
+        setExpandedTreeId(null);
       }
     };
 
@@ -35,12 +37,14 @@ function Home() {
 
   const handleTreeSelect = (tree: Tree) => {
     setSelectedTree(tree);
+    setExpandedTreeId(tree.id); // Expand the tree in the list
     // Update URL hash without page reload
     window.history.pushState(null, '', `#${tree.id}`);
   };
 
   const handleTreeClose = () => {
     setSelectedTree(null);
+    setExpandedTreeId(null);
     // Remove hash without page reload
     window.history.pushState(null, '', window.location.pathname);
   };
@@ -56,6 +60,7 @@ function Home() {
       <div className="relative mb-12">
         <Map
           trees={trees}
+          selectedTree={selectedTree}
           onTreeSelect={handleTreeSelect}
         />
 

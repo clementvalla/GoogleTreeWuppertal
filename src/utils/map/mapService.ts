@@ -1,13 +1,21 @@
 import { Tree } from '../../types/tree';
 import { mapLoader } from '../map/loader';
-import { DEFAULT_MAP_CONFIG, SCHWEBEBAHN_PATH_CONFIG, DEFAULT_MARKER_ICON, GOOGLE_TREE_MARKER_CONFIG } from './config';
+import { 
+  DEFAULT_MAP_CONFIG, 
+  SCHWEBEBAHN_PATH_CONFIG, 
+  DEFAULT_MARKER_ICON, 
+  SELECTED_MARKER_ICON,
+  GOOGLE_TREE_MARKER_CONFIG, 
+  SELECTED_GOOGLE_TREE_MARKER_CONFIG 
+} from './config';
 import { SCHWEBEBAHN_PATH } from '../../constants';
 
 export class MapService {
   private map: google.maps.Map | null = null;
-  private markers: google.maps.Marker[] = [];
+  private markers: Map<string, google.maps.Marker> = new Map();
   private schwebebahnPath: google.maps.Polyline | null = null;
   private google: typeof window.google | null = null;
+  private selectedTreeId: string | null = null;
 
   async initialize(element: HTMLElement, trees: Tree[], onTreeSelect: (tree: Tree) => void): Promise<void> {
     try {
@@ -34,6 +42,63 @@ export class MapService {
     return this.map;
   }
 
+  centerOnTree(tree: Tree): void {
+    if (!this.map) return;
+    
+    const position = { lat: tree.lat, lng: tree.lng };
+    this.map.panTo(position);
+    this.map.setZoom(14);
+
+    // Update marker appearance
+    this.updateSelectedMarker(tree.id);
+  }
+
+  private updateSelectedMarker(treeId: string): void {
+    if (!this.google) return;
+
+    // Reset previous selected marker if exists
+    if (this.selectedTreeId && this.markers.has(this.selectedTreeId)) {
+      const prevMarker = this.markers.get(this.selectedTreeId)!;
+      prevMarker.setIcon(
+        this.selectedTreeId === 'google-tree' 
+          ? {
+              url: GOOGLE_TREE_MARKER_CONFIG.url,
+              scaledSize: new this.google.maps.Size(
+                GOOGLE_TREE_MARKER_CONFIG.width,
+                GOOGLE_TREE_MARKER_CONFIG.height
+              ),
+              anchor: new this.google.maps.Point(
+                GOOGLE_TREE_MARKER_CONFIG.anchorX,
+                GOOGLE_TREE_MARKER_CONFIG.anchorY
+              )
+            }
+          : DEFAULT_MARKER_ICON
+      );
+    }
+
+    // Update new selected marker
+    if (this.markers.has(treeId)) {
+      const marker = this.markers.get(treeId)!;
+      marker.setIcon(
+        treeId === 'google-tree'
+          ? {
+              url: SELECTED_GOOGLE_TREE_MARKER_CONFIG.url,
+              scaledSize: new this.google.maps.Size(
+                SELECTED_GOOGLE_TREE_MARKER_CONFIG.width,
+                SELECTED_GOOGLE_TREE_MARKER_CONFIG.height
+              ),
+              anchor: new this.google.maps.Point(
+                SELECTED_GOOGLE_TREE_MARKER_CONFIG.anchorX,
+                SELECTED_GOOGLE_TREE_MARKER_CONFIG.anchorY
+              )
+            }
+          : SELECTED_MARKER_ICON
+      );
+    }
+
+    this.selectedTreeId = treeId;
+  }
+
   private createMarkers(trees: Tree[], onTreeSelect: (tree: Tree) => void): void {
     if (!this.map || !this.google) return;
     const google = this.google; // Local reference to avoid null checks
@@ -55,10 +120,7 @@ export class MapService {
               GOOGLE_TREE_MARKER_CONFIG.anchorY
             )
           }
-        : {
-            ...DEFAULT_MARKER_ICON,
-            anchor: new google.maps.Point(0, 0)
-          };
+        : DEFAULT_MARKER_ICON;
 
       const marker = new google.maps.Marker({
         position,
@@ -71,21 +133,28 @@ export class MapService {
         onTreeSelect(tree);
       });
 
-      this.markers.push(marker);
+      this.markers.set(tree.id, marker);
     });
+
+    // If there's a hash in the URL, highlight that tree's marker
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const tree = trees.find(t => t.id === hash);
+      if (tree) {
+        this.updateSelectedMarker(tree.id);
+      }
+    }
   }
 
   private clearMarkers(): void {
     if (!this.google) return;
-    const google = this.google; // Local reference to avoid null checks
 
     this.markers.forEach(marker => {
-      if (marker) {
-        google.maps.event.clearInstanceListeners(marker);
-        marker.setMap(null);
-      }
+      google.maps.event.clearInstanceListeners(marker);
+      marker.setMap(null);
     });
-    this.markers = [];
+    this.markers.clear();
+    this.selectedTreeId = null;
   }
 
   updateMarkers(trees: Tree[], onTreeSelect: (tree: Tree) => void): void {
