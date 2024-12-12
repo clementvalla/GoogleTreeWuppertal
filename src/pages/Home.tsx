@@ -74,7 +74,7 @@ function Home() {
       </div>
 
       <section className="mb-12">
-        <p className="text-gray-700 w-1/2 mb-8 font-bold">
+        <p className="text-gray-700 w-1/2 max-lg:w-3/4 max-sm:w-full mb-8 font-bold">
           Der Google Tree Wuppertal ist eine lebensgroße Skulptur eines aus Google Maps 
           extrahierten Baums in Wuppertal, die im Winter 2024 auf den Fußwegen in der 
           Nähe der Architekturfakultät am Campus Haspel installiert wird. In Zusammenarbeit 
