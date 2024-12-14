@@ -8,6 +8,7 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
         title: ['Work Sans', 'system-ui', '-apple-system', 'sans-serif'],
+        founders: ['Founders Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
