@@ -8,5 +8,18 @@ export default defineConfig({
   },
   define: {
     'process.env': {}
+  },
+  build: {
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      output: {
+        assetFileNames: ({ name = '' }) => {
+          if (name.endsWith('.otf')) {
+            return 'assets/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    }
   }
 });

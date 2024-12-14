@@ -1,3 +1,5 @@
+import foundersGrotesk from '../../assets/fonts/TestFoundersGroteskCondensed-Bold.otf';
+
 function Header() {
   const isAboutPage = window.location.hash === '#about';
   const textColor = isAboutPage ? 'text-white' : 'text-black';
@@ -5,6 +7,17 @@ function Header() {
 
   return (
     <header className="py-4">
+      <style>
+        {`
+          @font-face {
+            font-family: 'Founders Grotesk';
+            src: url('${foundersGrotesk}') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: block;
+          }
+        `}
+      </style>
       <div className="flex items-end gap-2 sm:gap-4">
         <h1 className="font-title text-4xl sm:text-7xl md:text-8xl font-bold tracking-tight title-condensed">
           <span className={`block -mb-2 sm:-mb-4 md:-mb-6 ${textColor}`}>THE</span>
@@ -15,7 +28,7 @@ function Header() {
         <img 
           src="/gtree_isolated.png" 
           alt="Google Tree Illustration" 
-          className="w-12 sm:w-28 md:w-32 h-auto object-contain"
+          className="w-16 sm:w-28 md:w-32 h-auto object-contain"
         />
       </div>
     </header>

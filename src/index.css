@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
 
-@font-face {
-  font-family: 'Founders Grotesk';
-  src: url('/fonts/TestFoundersGroteskCondensed-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,13 +12,13 @@ body {
 .title-condensed {
   font-family: 'Founders Grotesk', system-ui, -apple-system, sans-serif;
   letter-spacing: -0.05em;
-  line-height: 0.95;
+  line-height: 0.9;
   font-weight: bold;
 }
 
 @media (min-width: 640px) {
   .title-condensed {
-    line-height: 0.65;
+    line-height: 0.75;
   }
 }
 
