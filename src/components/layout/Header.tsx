@@ -5,17 +5,17 @@ function Header() {
 
   return (
     <header className="py-4">
-      <div className="flex items-end gap-4">
-        <h1 className="font-title text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight title-condensed">
-          <span className={`block -mb-6 ${textColor}`}>THE</span>
-          <span className={`block -mb-6 ${textColor}`}>GOOGLE TREE</span>
-          <span className={`block -mb-6 ${accentColor}`}>WUPPERTAL</span>
+      <div className="flex items-end gap-2 sm:gap-4">
+        <h1 className="font-title text-4xl sm:text-7xl md:text-8xl font-bold tracking-tight title-condensed">
+          <span className={`block -mb-2 sm:-mb-4 md:-mb-6 ${textColor}`}>THE</span>
+          <span className={`block -mb-2 sm:-mb-4 md:-mb-6 ${textColor}`}>GOOGLE TREE</span>
+          <span className={`block -mb-2 sm:-mb-4 md:-mb-6 ${accentColor}`}>WUPPERTAL</span>
           <span className={`block ${accentColor}`}>2024</span>
         </h1>
         <img 
           src="/gtree_isolated.png" 
           alt="Google Tree Illustration" 
-          className="w-32 h-auto object-contain"
+          className="w-12 sm:w-28 md:w-32 h-auto object-contain"
         />
       </div>
     </header>
