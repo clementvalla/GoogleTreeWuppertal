@@ -1,5 +1,6 @@
 export interface Tree {
   id: string;
+  number: number;  // Added number field
   name: string;
   latinName: string;
   lat: number;

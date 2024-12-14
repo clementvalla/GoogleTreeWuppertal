@@ -18,7 +18,7 @@ function TreeList({ trees, onTreeSelect, expandedTreeId, onTreeExpand }: TreeLis
   return (
     <section id="tree-list">
       <div className="border-t border-b border-black">
-        <h2 className="text-xl sm:text-2xl font-normal my-4 sm:my-6">Die Baumsammlung</h2>
+        <h2 className="text-xl sm:text-2xl font-normal my-4 sm:my-6">Baumroute durch Wuppertal</h2>
       </div>
       
       <div className="divide-y divide-black">

@@ -16,10 +16,13 @@ function TreeDetails({ tree }: TreeDetailsProps) {
     { label: 'Lebensraum', value: tree.habitat }
   ].filter(detail => detail.value !== null && detail.value !== undefined);
 
+  // Split description into paragraphs and render each one
+  const paragraphs = tree.description.split('\n\n');
+
   return (
     <div className="space-y-8 p-6">
       <div>
-        <h3 className="text-xl font-normal">{tree.name}</h3>
+        <h3 className="text-xl font-normal">{tree.number}. {tree.name}</h3>
         <p className="text-base italic text-gray-400">{tree.latinName}</p>
         <div className="mt-1">
           <p className="text-sm uppercase tracking-wide text-[#4BA459]">{tree.schwebebahnStop}</p>
@@ -45,14 +48,15 @@ function TreeDetails({ tree }: TreeDetailsProps) {
       )}
 
       {tree.features && (
-        <div className="prose max-w-none">
-          <h4 className="text-sm font-medium text-gray-500 mb-2">Besonderheiten zum Baum</h4>
-          <p className="text-gray-700">{tree.features}</p>
+        <div className="max-w-none">
+          <p className="text-gray-700 italic">{tree.features}</p>
         </div>
       )}
 
-      <div className="prose max-w-none">
-        <p className="text-gray-700">{tree.description}</p>
+      <div className="max-w-none">
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="text-gray-700 mb-2 last:mb-0">{paragraph}</p>
+        ))}
       </div>
     </div>
   );

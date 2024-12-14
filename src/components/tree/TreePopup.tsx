@@ -46,7 +46,7 @@ function TreePopup({ tree, onClose, onReadMore }: TreePopupProps) {
       
       <div className="mt-3 sm:mt-4 space-y-3 sm:space-y-4">
         <div className="space-y-0.5">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-normal">{tree.name}</h3>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-normal">{tree.number}. {tree.name}</h3>
           <p className="text-sm sm:text-base italic text-gray-400">{tree.latinName}</p>
         </div>
 

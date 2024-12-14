@@ -3,12 +3,13 @@ import { Tree } from '.types/tree';
 export const trees: Tree[] = [
   {
     id: 'kirschbaeume',
+    number: 1,
     name: 'Kirschbäume an der B7',
     latinName: 'Prunus serrulata (lat. „fein gesägt")',
     lat: 51.247972,
     lng: 7.108500,
     address: 'Friedrich-Ebert-Straße 217',
-    schwebebahnStop: 'Zoo / Stadion',
+    schwebebahnStop: 'Varresbeckerstraße',
     family: 'Rosengewächse',
     nativeCountry: 'Japan / China',
     yearPlanted: undefined,
@@ -22,6 +23,7 @@ export const trees: Tree[] = [
   },
   {
     id: 'linde',
+    number: 2,
     name: 'Einzelnstehende Linde',
     latinName: 'Tilia cordata',
     lat: 51.247556,
@@ -35,12 +37,13 @@ export const trees: Tree[] = [
     maxAge: 1000,
     habitat: undefined,
     features: 'Wird auch „Herzblattlinde" genannt. Hervorragende Nektarquelle für Bienen >Lindenblütenhonig. "Die Linde kommt 300 Jahre, steht 300 Jahre und vergeht 300 Jahre". Im Mittelalter war Lindenholz als "Lignum sacrum" (heiliges Holz) bekannt und wurde zum Schnitzen von religiösen Figuren und Altären verwendet, aus Lindenbast wurden zudem Schnüre, Seile und Bogensehnen hergestellt. Einzelbäume hatten wichtige Funktionen z.B. als Richtslinde oder Orientierungshilfen. "lind"= (der Empfindung) wohltuend, mild, sanft, weich > Linderung',
-    description: 'Linden haben eine dünne Schicht ewig teilungsfähiger Zellen, die direkt unter der Borke liegen und die Linde bis zu 1000 Jahre alt werden lassen können. Jedes Jahr bildet die Linde neues Gewebe, neue Blätter, neue Triebe, Wurzeln und neue Jahresringe. Die alten Teile liegen gut geschützt im Stammzentrum. Verletzungen werden ausgeglichen, Trockenzeiten überstanden.\nDie große Linde ist erst etwa 80 Jahre alt, und wurde möglicherweise nach Errichtung der Halle gepflanzt, die später umgebaut wurde zu einem der größten Kinos Westdeutschlands -dem "Atrium". \nSporthalle? Filmtheater? -Der Arrenberg ist ein Ort der Veränderung; der Gutenbergplatz, auf dem wir uns befinden hieß Schillerplatz und bot Raum für einen "Panoramabau". Die ehemalige Sporthalle mit dem Arkadengang ist heute ein Autohaus. In der Tangoschule um die Ecke gab es den ersten mechanischen Webstuhl Preußens, der Kindergarten war das Kaiserin-Augusta-Stift für ältere alleinstehende Damen, ein etablierter Club in einem Weinlager. Der Schlachthof in der "Viehhofstraße" wurde zum attraktiven Unternehmensstandort, am Ort des Waisenhauses ist jetzt ein Jugendtreff, das Armenkrankenhaus mit Desinfektionsanstalt (um Kleider, Matratzen von Kranken oder medizinisches Besteck zu desinfizieren) und "Irrenanstalt" ist nun ein modernes Herzzentrum. Die junge, alte Linde und auch das Quartier Arrenberg wachsen kontinuierlich weiter und erfinden sich dabei immer wieder neu. Vielleicht wird sie noch in einigen hundert Jahren dort stehen… – wie auch immer dieses Viertel dann aussehen mag.',
+    description: 'Linden haben eine dünne Schicht ewig teilungsfähiger Zellen, die direkt unter der Borke liegen und die Linde bis zu 1000 Jahre alt werden lassen können. Jedes Jahr bildet die Linde neues Gewebe, neue Blätter, neue Triebe, Wurzeln und neue Jahresringe. Die alten Teile liegen gut geschützt im Stammzentrum. Verletzungen werden ausgeglichen, Trockenzeiten überstanden.\n\nDie große Linde ist erst etwa 80 Jahre alt, und wurde möglicherweise nach Errichtung der Halle gepflanzt, die später umgebaut wurde zu einem der größten Kinos Westdeutschlands -dem "Atrium".\n\nSporthalle? Filmtheater? -Der Arrenberg ist ein Ort der Veränderung; der Gutenbergplatz, auf dem wir uns befinden hieß Schillerplatz und bot Raum für einen "Panoramabau". Die ehemalige Sporthalle mit dem Arkadengang ist heute ein Autohaus. In der Tangoschule um die Ecke gab es den ersten mechanischen Webstuhl Preußens, der Kindergarten war das Kaiserin-Augusta-Stift für ältere alleinstehende Damen, ein etablierter Club in einem Weinlager. Der Schlachthof in der "Viehhofstraße" wurde zum attraktiven Unternehmensstandort, am Ort des Waisenhauses ist jetzt ein Jugendtreff, das Armenkrankenhaus mit Desinfektionsanstalt (um Kleider, Matratzen von Kranken oder medizinisches Besteck zu desinfizieren) und "Irrenanstalt" ist nun ein modernes Herzzentrum. Die junge, alte Linde und auch das Quartier Arrenberg wachsen kontinuierlich weiter und erfinden sich dabei immer wieder neu. Vielleicht wird sie noch in einigen hundert Jahren dort stehen… – wie auch immer dieses Viertel dann aussehen mag.',
     image: '2- Einzelnstehende Linde.jpg',
     thumbnail: '2- Einzelnstehende Linde.jpg'
   },
   {
     id: 'silberweide',
+    number: 3,
     name: 'Silberweide',
     latinName: 'Salix Alba',
     lat: 51.252278,
@@ -54,12 +57,13 @@ export const trees: Tree[] = [
     maxAge: 200,
     habitat: undefined,
     features: 'Pionier und Überlebenskünstler für extreme Standorte: verträgt Überflutungshöhen bis über 3 Meter und eine Überschwemmungsdauer von mehr als 200 Tagen /Jahr; Blätter sind silbern behaart -wirken als Verdunstungsschutz (gegen zeitweilige Trockenheit ) und Strahlungsschutz (extremen Einstrahlung an Gewässerrändern) Das Innere des Stamms, das Kernholz, ist nicht durch Gerbstoffe vor Fäulnis geschützt und dadurch anfällig für Verwitterung -deswegen ist auch diese Weide innen teilweise hohl.',
-    description: 'Einst war die Wupper der schmutzige Abwasserkanal der Stadt, giftig und übelriechend. Aber auch die Basis des wirtschaftlichen Erfolgs im Wuppertal. Die Situation hinnehmend wurden die historischen Gebäude entlang der Wupper weitgehend der Wupper abgewandt errichtet -die Stadt wendet der Wupper den Rücken zu.\n Wenn man heute hier an der Wupper steht, Vögel beobachtet und die Lachse im klaren Wasser schwimmen sieht -kaum mehr vorstellbar! Seit der Gründung des Wupperverbands 1930 besserte sich die Lage Jahr für Jahr. Zunächst wurden Klärwerke und die Talsperre errichtet, Schadstoffeinträge verringert, Überschwemmungsgebieten wird mehr Raum gegeben, Fischtreppen angelegt und die Wupper an einigen Stellen zugänglich gemacht. Auch privates Engagement, wie hier am Wupperweg, lässt die Wupper an immer mehr Orten zum innerstädtischen Erholungsraum werden. Die Silberweide ist ein willkommenes Gewächs -sie verträgt Überflutungen von über drei Metern. Ihre Fähigkeit, in extremen Bedingungen zu überleben, entspricht den Herausforderungen, die uns durch die zunehmende Häufigkeit von Hochwasserereignissen weltweit gestellt werden. In Ihrem oftmals hohlen Stamm bietet sie Lebensraum für weitere Pflanzen und Tiere.\n Kopfschüttelnd schauen wir auf die wunderschöne Wupper und wundern uns -wie konnte man nur! Ein paar Schritte Richtung Schwebebahn-Halt Robert-Daum-Platz und man steht an einer riesigen Kreuzung. Eine breite asphaltierte Schneise ohne jegliche Lebensqualität- laut und dreckig. Wer es sich leisten kann, wohnt nicht an dieser Straße. Ehemals war die Wupper die "fiese Seite" der Stadt -heute ist es wahrscheinlich die B7.',
+    description: 'Einst war die Wupper der schmutzige Abwasserkanal der Stadt, giftig und übelriechend. Aber auch die Basis des wirtschaftlichen Erfolgs im Wuppertal. Die Situation hinnehmend wurden die historischen Gebäude entlang der Wupper weitgehend der Wupper abgewandt errichtet -die Stadt wendet der Wupper den Rücken zu.\n\nWenn man heute hier an der Wupper steht, Vögel beobachtet und die Lachse im klaren Wasser schwimmen sieht -kaum mehr vorstellbar! Seit der Gründung des Wupperverbands 1930 besserte sich die Lage Jahr für Jahr. Zunächst wurden Klärwerke und die Talsperre errichtet, Schadstoffeinträge verringert, Überschwemmungsgebieten wird mehr Raum gegeben, Fischtreppen angelegt und die Wupper an einigen Stellen zugänglich gemacht. Auch privates Engagement, wie hier am Wupperweg, lässt die Wupper an immer mehr Orten zum innerstädtischen Erholungsraum werden. Die Silberweide ist ein willkommenes Gewächs -sie verträgt Überflutungen von über drei Metern. Ihre Fähigkeit, in extremen Bedingungen zu überleben, entspricht den Herausforderungen, die uns durch die zunehmende Häufigkeit von Hochwasserereignissen weltweit gestellt werden. In Ihrem oftmals hohlen Stamm bietet sie Lebensraum für weitere Pflanzen und Tiere.\n\nKopfschüttelnd schauen wir auf die wunderschöne Wupper und wundern uns -wie konnte man nur! Ein paar Schritte Richtung Schwebebahn-Halt Robert-Daum-Platz und man steht an einer riesigen Kreuzung. Eine breite asphaltierte Schneise ohne jegliche Lebensqualität- laut und dreckig. Wer es sich leisten kann, wohnt nicht an dieser Straße. Ehemals war die Wupper die "fiese Seite" der Stadt -heute ist es wahrscheinlich die B7.',
     image: '3- Silberweide.jpg',
     thumbnail: '3- Silberweide.jpg'
   },
   {
     id: 'wilde-bergkirsche',
+    number: 4,
     name: 'Wilde Bergkirsche',
     latinName: 'Prunus sargentii',
     lat: 51.256278,
@@ -73,12 +77,13 @@ export const trees: Tree[] = [
     maxAge: undefined,
     habitat: undefined,
     features: 'Auch Vogelkirsche genannt und die Urform unserer Kirschen. Sie ist Hitze- und Trockenheitsresistent -mag aber keine schlechte Luft und wächst deswegen nicht an Hauptverkehrsstraßen. Wichtige Nektarquelle für Insekten und Im Frühjahr hat sie bis zu 1 Millionen Blüten. Früchte beliebt bei Vögeln -die die Kirsche so auch verbreiten.',
-    description: 'Erinnert Sie die wilde Kirsche direkt am Bismarcksteg an den letzten Elberfelder Oberbürgermeister Kirschbaum, der 1927 im damaligen, pompösen "Thalia Theater", welches ungefähr dort stand, wo jetzt der Sparkassen-Turm ist, ein Gastspiel der „Negerrevue" aus nationalistischen und rassistischen Gründen verbot.\nVielleicht erinnert die Wildkische Sie mit ihren kleinen und bitteren Früchten aber auch an das harte Leben der ehemaligen Bewohner des Islandufers -denn hier wo die jetzigen Sparkassen-Gebäude stehen, war ein Slum!\n „Island" kommt wahrscheinlich von „Eisland". Hier wohnten Leibeigene ,deren Aufgabe es war den Burggraben der Burg „Elverfeld" („Elve" = Fluss), eisfrei zu halten. Das Ufer entwickelte sich zum Armenviertel mit dicht bebauten Häusern schlechter Qualität, Krankheiten, Hunger, laut und dreckig und mit der übelriechenden Wupper direkt vor der Tür. 1900 wurde das Armenviertel abgerissen, diese feine Brücke erbaut und der Bau des Thalia Theaters begonnen. Es verfügte über mehrere Foyers, Restaurants und Festsäle. Schauseite und Eingang leuchteten in Richtung der Elberfelder Innenstadt. 1967 wurde das Thalia Theater endgültig geschlossen und mit dem Abriss begonnen -um am selben Ort das höchste Gebäude der Stadt zu errichten.\nOhne eine Spur zu hinterlassen, ohne Hinweis auf das was war, verschwand das Armenviertel und wurde zum Ort der Repräsentation und Unterhaltung. Ohne eine Spur zu hinterlassen verschwand auch dieser Ort mit seinen Erinnerungen und wurde zum heutigen Islandufer, welches mit seinem 75 m hohen Sparkassenturm, dem höchsten Gebäude der Stadt, wieder eine prägendes Kapitel aufschlug. Jede dieser Nutzungen steht symbolisch für die relevanten Themen ihrer Zeit -und den Wunsch ganz von vorn anfangen zu wollen.',
+    description: 'Erinnert Sie die wilde Kirsche an den letzten Elberfelder Oberbürgermeister Kirschbaum, der im damaligen, pompösen „Thalia Theater" ein Gastspiel der „Negerrevue" aus nationalistischen und rassistischen Gründen verbot?\n\nVielleicht erinnert die Wildkische Sie mit ihren kleinen und bitteren Früchten aber auch an das harte Leben der ehemaligen Bewohner des Islandufers -denn hier wo die jetzigen Sparkassen-Gebäude stehen, war ein Slum!\n\n„Island" kommt wahrscheinlich von „Eisland". Hier wohnten Leibeigene ,deren Aufgabe es war den Burggraben der Burg „Elverfeld" („Elve" = Fluss), eisfrei zu halten. Das Ufer entwickelte sich zum Armenviertel mit dicht bebauten Häusern schlechter Qualität, Krankheiten, Hunger, laut und dreckig und mit der übelriechenden Wupper direkt vor der Tür. 1900 wurde das Armenviertel abgerissen, diese feine Brücke erbaut und der Bau des Thalia Theaters begonnen. Es verfügte über mehrere Foyers, Restaurants und Festsäle. Schauseite und Eingang leuchteten in Richtung der Elberfelder Innenstadt. 1967 wurde das Thalia Theater endgültig geschlossen und mit dem Abriss begonnen -um am selben Ort das höchste Gebäude der Stadt zu errichten.\n\nOhne eine Spur zu hinterlassen, ohne Hinweis auf das was war, verschwand das Armenviertel und wurde zum Ort der Repräsentation und Unterhaltung. Ohne eine Spur zu hinterlassen verschwand auch dieser Ort mit seinen Erinnerungen und wurde zum heutigen Islandufer, welches mit seinem 75 m hohen Sparkassenturm, dem höchsten Gebäude der Stadt, wieder eine prägendes Kapitel aufschlug. Jede dieser Nutzungen steht symbolisch für die relevanten Themen ihrer Zeit -und den Wunsch ganz von vorn anfangen zu wollen.',
     image: '4- Wilde Bergkirsche.jpg',
     thumbnail: '4- Wilde Bergkirsche.jpg'
   },
   {
     id: 'erle',
+    number: 5,
     name: 'Erle',
     latinName: 'Alnus',
     lat: 51.256694,
@@ -98,6 +103,7 @@ export const trees: Tree[] = [
   },
   {
     id: 'buche-bei-pina',
+    number: 6,
     name: 'Buche bei Pina',
     latinName: 'Fagus sylvatica',
     lat: 51.256917,
@@ -117,6 +123,7 @@ export const trees: Tree[] = [
   },
   {
     id: 'google-tree',
+    number: 7,
     name: 'Google Tree',
     latinName: 'von Certain Measures und Clement Valla',
     lat: 51.259472,
@@ -130,12 +137,13 @@ export const trees: Tree[] = [
     maxAge: 3,
     habitat: undefined,
     features: 'Gefertigt aus einem Stahlgerüst und gekanteten Aluminiumblechen. Die Form und Texturierung ist einem Baum aus Google Earth entlehnt, dessen reales Original auf einem Parkplatz am Botanischen Garten Wuppertal wächst -eine Winterlinde.',
-    description: 'Die Skulptur „Google Tree" von Certain Measures und Clement Valla ist ein Baum, der aus dem uns allen bekannten, digitalen Raum von Google Earth in die physische Welt exportiert wurde. Der künstliche Baum wirkt vertraut und fremd zugleich. Er zeigt hautnah, wie maschinelle Bildverarbeitung erfasste Objekte wie Gebäude oder Bäume analysiert, zusammengefügt und auf neue, geometrische Formen reduziert. Die Formen sind für die Anzeige auf dem Bildschirm und die Übertragung über ein Netzwerk optimiert – hoch komprimierbare Illusionen, die praktisch jeder Computer mit minimalen Ressourcen darstellen kann.\nDer physische Zwilling unseres Baums stammt von der Elisenhöhe in Wuppertal -er fristet als gewöhnlicher Parkplatzbaum sein Leben. Im Sommer beschattet er die parkenden Autos, gliedert die Fläche und trägt zu einer angenehmeren Atmosphäre bei. Als Skulptur gewinnt er neue Bedeutung und unterstreicht, wie wertungsfrei jedes zum Zeitpunkt der Aufnahme existierende reale Objekt auch Teil des digitalen Raums wird.\n Mit der Skulptur wird ein uns aus dem virtuellen Raum vertrautes Objekt -ein Google-Baum-, im physischen Raum erlebbar, um auf die bereits bestehende Vermischung und Verschmelzung von physischen und virtuellen Räumen hinzuweisen. Am Zukunfts- und Lernort Haspel zwischen dem Berufskolleg am Haspel und dem Campus Haspel steht der "Google Tree" in guter Nachbarschaft: Die Verschmelzung von digitaler und analoger Welt ist selbstverständlicher Teil des Lebens der Heranwachsenden, die die beiden Bildungseinrichtungen besuchen und bereits wichtiger Teil der Lehre. Ein kritisches Hinterfragen von im virtuellen Raum gezeigten „Realitäten" und Sensibilität für die Unterschiedlichkeit von virtuellen und physischen Räumen ist ganz besonders hier grundlegend.',
+    description: 'Die Skulptur „Google Tree" von Certain Measures und Clement Valla ist ein Baum, der aus dem uns allen bekannten, digitalen Raum von Google Earth in die physische Welt exportiert wurde. Der künstliche Baum wirkt vertraut und fremd zugleich. Er zeigt hautnah, wie maschinelle Bildverarbeitung erfasste Objekte wie Gebäude oder Bäume analysiert, zusammengefügt und auf neue, geometrische Formen reduziert. Die Formen sind für die Anzeige auf dem Bildschirm und die Übertragung über ein Netzwerk optimiert – hoch komprimierbare Illusionen, die praktisch jeder Computer mit minimalen Ressourcen darstellen kann.\n\nDer physische Zwilling unseres Baums stammt von der Elisenhöhe in Wuppertal -er fristet als gewöhnlicher Parkplatzbaum sein Leben. Im Sommer beschattet er die parkenden Autos, gliedert die Fläche und trägt zu einer angenehmeren Atmosphäre bei. Als Skulptur gewinnt er neue Bedeutung und unterstreicht, wie wertungsfrei jedes zum Zeitpunkt der Aufnahme existierende reale Objekt auch Teil des digitalen Raums wird.\n\nAm Zukunfts- und Lernort Haspel zwischen dem Berufskolleg am Haspel und dem Campus Haspel steht der „Google Tree" in guter Nachbarschaft: Die Verschmelzung von digitaler und analoger Welt ist selbstverständlicher Teil des Lebens der Heranwachsenden, die die beiden Bildungseinrichtungen besuchen und bereits wichtiger Teil der Lehre. Ein kritisches Hinterfragen von im virtuellen Raum gezeigten „Realitäten" und Sensibilität für die Unterschiedlichkeit von virtuellen und physischen Räumen ist ganz besonders hier grundlegend.',
     image: '7- Google Tree.jpg',
     thumbnail: '7- Google Tree.jpg'
   },
   {
     id: 'blutbuche',
+    number: 8,
     name: 'Blutbuche',
     latinName: 'Fagus sylvatica f. purpurea (Bedeutung: „Essen im Wald")',
     lat: 51.267389,
@@ -148,13 +156,14 @@ export const trees: Tree[] = [
     maxHeight: undefined,
     maxAge: 300,
     habitat: undefined,
-    features: 'Die Blutbuchen ist eine natürliche Mutation der Buche. Die rote Färbung der Blätter entsteht durch ein fehlendes, für den Abbau des roten Farbstoff zuständiges Enzym; im Laufe des Sommers ergrünen die Blätter immer mehr. Der lateinische Name der Blutbuche bedeutet „Essen im Wald" -und tatsächlich kann man die Blattknospen und jungen Blätter verzehren, die Nüsse in den Bucheckern essen, oder sogar Öl daraus herstellen.\n Blutbuchen kommen in der Natur nur selten vor, da ihre Mutation zu langsamerem Wachstum führt und sie dadurch einen Nachteil hat.',
+    features: 'Die Blutbuchen ist eine natürliche Mutation der Buche. Die rote Färbung der Blätter entsteht durch ein fehlendes, für den Abbau des roten Farbstoff zuständiges Enzym; im Laufe des Sommers ergrünen die Blätter immer mehr. Der lateinische Name der Buche bedeutet „Essen im Wald" -und tatsächlich kann man die Blattknospen und jungen Blätter verzehren, die Nüsse in den Bucheckern essen, oder sogar Öl daraus herstellen.\n\nBlutbuchen kommen in der Natur nur selten vor, da ihre Mutation zu langsamerem Wachstum führt und sie dadurch einen Nachteil hat.',
     description: 'Fast alle Blutbuchen stammen von einer einzigen Mutterblutbuche ab, die im Jahr 1690 nahe der thüringischen Stadt Sondershausen entdeckt wurde. Ausgehend von 11 Schösslingen, gelangte sie nach ganz Europa und war ab dem 18. Jahrhundert ein beliebter Parkbaum. Auch unsere prächtige Blutbuche war Teil eines kleinen Parks - dem privaten Garten der Unternehmerfamilie Engels. Die Wohnhäuser der Familie standen in direkter Nachbarschaft zu den Produktionsgebäuden und den Wohnhäusern der Arbeiter, die am Barmer Bruch Artikel wie Bänder, Kordeln und Spitze herstellten. Der gepflegte Garten und die großzügigen bürgerlichen Wohnhäusern der Familie Engels bildeten einen starken Kontrast zu den beengten Wohnverhältnissen der Textilarbeiter, und wird für Friedrich Engels bereits in seiner Kindheit offensichtlich gewesen sein. In seinen "Briefen aus dem Wupperthale" schreibt er um 1840: "Das Arbeiten in den niedrigen Räumen, wo die Leute mehr Kohlendampf und Staub einatmen, als Sauerstoff, und das meistens schon von ihrem sechsten Jahre an, ist gerade dazu gemacht, ihnen alle Kraft und Lebenslust zu rauben. (...) in Elberfeld allein werden von 2500 schulpflichtigen Kindern 1200 dem Unterricht entzogen und wachsen in den Fabriken auf, bloß damit der Fabrikherr nicht einem Erwachsenen, dessen Stelle sie vertreten, das Doppelte des Lohnes zu geben nötig hat, das er einem Kinde gibt." Ein Jahr zuvor, 1839, wurde das erste Gesetz beschlossen -wenn auch noch nicht überall umgesetzt-, das verbot Kinder unter 9 Jahren regelmäßig in Fabriken zu beschäftigen. Die Kindheit wurde als solche erkannt und nach und nach zum geschützten Raum, wie wir ihn heute kennen. Auch Buchen sorgen dafür, dass ihre Nachkommen unter guten Bedingungen aufwachsen -die jungen Buchen treiben vor den Älteren aus, und können so das Licht im Frühling für sich nutzen.',
     image: '9- Blutbuche.jpg',
     thumbnail: '9- Blutbuche.jpg'
   },
   {
     id: 'junge-eiche',
+    number: 9,
     name: 'Junge Eiche',
     latinName: 'Quercus',
     lat: 51.267278,
@@ -168,12 +177,13 @@ export const trees: Tree[] = [
     maxAge: 1000,
     habitat: undefined,
     features: 'Ein älterer Eichenbaum kann über 2000 Tier- und Pflanzenarten unterstützen. Inspiriert in Mythen, Sagen, Gedichten und Liedern. Abgestorbene Äste, sogenannte Totäste, werden nicht abgeworfen, sondern verbleiben am Stamm. Dies verleiht alten Eichen ein mystisches und urtümliches Erscheinungsbild.',
-    description: 'Noch heute ziert ein Eichenzweig die deutschen 5-,2- und 1-Cent Münzen, wie auch zuvor die Pfennige und historische deutsche Münzen- es wurden Friedens-Eichen, Luther-Eichen, Bismarck-Eichen und auch Hitler-Eichen gepflanzt. Auf der Suche nach Gemeinsamkeit wurde die Eiche zum Objekt nationaler Identifikation und beliebtem Symbol in Texten und Dichtung.\n "Schon stand im Nebelkleid die Eiche, I Ein aufgetürmter Riese, da, I Wo Finsternis aus dem Gesträuche I Mit hundert schwarzen Augen sah." Dichter wie Goethe stellten Eichen als Wesen dar, die Freude oder Schmerz empfinden und ausdrücken können. Heute wissen wir, dass diese poetischen Vorstellungen märchenhaft klingen, jedoch auf Tatsachen beruhen: dem sogenannten Wood Wide Web, einem unterirdischen Netzwerk aus Wurzeln und Pilzfäden, das den Austausch von Nährstoffen und Wasser, aber auch Informationen zwischen Bäumen ermöglicht. Gut vernetzte Bäume sind gesünder, wachsen schneller und sind resistenter gegenüber Schädlingsangriffen. Auch unsere Eiche ist Teil eines solchen Baum-Netzwerks und steht zugleich symbolisch für Verbindung und Kommunikation durch ihren Standort am Matagalpa-Ufer. Die Städtepartnerschaft zwischen Wuppertal und Matagalpa fördert seit fast 40 Jahren den Austausch durch Projekte wie Schulpartnerschaften, Stipendien und Klimaschutzinitiativen, Konzertreisen und Bürgerreisen. So wie die Bäume Informationen und Ressourcen über das Wood-Wide-Web teilen, konnte auch diese Verbindung bereichernde Begegnungen, neue Perspektiven und in den letzten, bewegten Jahren für Matagalpa notwendige Ressourcen bieten.',
+    description: 'Noch heute ziert ein Eichenzweig die deutschen 5-,2- und 1-Cent Münzen, wie auch zuvor die Pfennige und historische deutsche Münzen- es wurden Friedens-Eichen, Luther-Eichen, Bismarck-Eichen und auch Hitler-Eichen gepflanzt. Auf der Suche nach Gemeinsamkeit wurde die Eiche zum Objekt nationaler Identifikation und beliebtem Symbol in Texten und Dichtung.\n\n"Schon stand im Nebelkleid die Eiche, I Ein aufgetürmter Riese, da, I Wo Finsternis aus dem Gesträuche I Mit hundert schwarzen Augen sah." Dichter wie Goethe stellten Eichen als Wesen dar, die Freude oder Schmerz empfinden und ausdrücken können. Heute wissen wir, dass diese poetischen Vorstellungen märchenhaft klingen, jedoch auf Tatsachen beruhen: dem sogenannten Wood Wide Web, einem unterirdischen Netzwerk aus Wurzeln und Pilzfäden, das den Austausch von Nährstoffen und Wasser, aber auch Informationen zwischen Bäumen ermöglicht. Gut vernetzte Bäume sind gesünder, wachsen schneller und sind resistenter gegenüber Schädlingsangriffen. Auch unsere Eiche ist Teil eines solchen Baum-Netzwerks und steht zugleich symbolisch für Verbindung und Kommunikation durch ihren Standort am Matagalpa-Ufer. Die Städtepartnerschaft zwischen Wuppertal und Matagalpa fördert seit fast 40 Jahren den Austausch durch Projekte wie Schulpartnerschaften, Stipendien und Klimaschutzinitiativen, Konzertreisen und Bürgerreisen. So wie die Bäume Informationen und Ressourcen über das Wood-Wide-Web teilen, konnte auch diese Verbindung bereichernde Begegnungen, neue Perspektiven und in den letzten, bewegten Jahren für Matagalpa notwendige Ressourcen bieten.',
     image: '8- Junge Eiche.jpg',
     thumbnail: '8- Junge Eiche.jpg'
   },
   {
     id: 'scheinakazien',
+    number: 10,
     name: 'Gruppe von Schein-Akazien',
     latinName: 'Robinia pseudoacacia',
     lat: 51.269833,
@@ -187,12 +197,13 @@ export const trees: Tree[] = [
     maxAge: 200,
     habitat: undefined,
     features: 'Die Schein-Akazie, oder Robinie, wurde im frühen 17. Jhr. in Europa eingebürgert. Benannt nach Jean Robin, einem Hofgärtner. Sie zeichnet sich durch ihre hohe Anpassungsfähigkeit an schwierige Umweltbedingungen aus und verdrängt damit einheimische Pflanzen. Holz gilt als widerstandsfähiger und dauerhafter als Eichenholz. Alle Pflanzenteile (bis auf die Blüten) sind giftig. Wegen der Giftigkeit darf Robinienholz z.B. nicht zum Bau von Pferdeboxen verwendet werden.',
-    description: 'Die vier kleinen Bäume am Alten Markt erinnern auf den ersten Blick an ferne Landschaften: Ihre filigranen Blätter und die charakteristische Wuchsform rufen Bilder von Savannen und weiten Ebenen Afrikas hervor, wo Akazien die Landschaft prägen.\n Das unermüdliche Rauschen der vielen Autos und der Schwebebahn, stellt jedoch klar: Diese Bäume sind keine echten Akazien, sondern Schein-Akazien, besser bekannt als Robinien. Und sie sind es auch nicht die, wie ihre Verwandten die afrikanischen Schirmakazien die, die Landschaft prägen, sondern hier sind es Straßen und Verkehr.\n Die vier Schein-Akazien wurden sicher gepflanzt weil sie geringe Ansprüche an Bodenverhältnisse haben, Luftverschmutzungen, Streusalz und Hitze ertragen. Aber vielleicht auch um dem Betrachter für einen kurzen Moment erlauben, diesen Ort zu verlassen und sich in die ferne Ruhe der afrikanischen Savanne zu träumen.',
+    description: 'Die vier kleinen Bäume am Alten Markt erinnern auf den ersten Blick an ferne Landschaften: Ihre filigranen Blätter und die charakteristische Wuchsform rufen Bilder von Savannen und weiten Ebenen Afrikas hervor, wo Akazien die Landschaft prägen.\n\nDas unermüdliche Rauschen der vielen Autos und der Schwebebahn, stellt jedoch klar: Diese Bäume sind keine echten Akazien, sondern Schein-Akazien, besser bekannt als Robinien. Und sie sind es auch nicht die, wie ihre Verwandten die afrikanischen Schirmakazien die, die Landschaft prägen, sondern hier sind es Straßen und Verkehr.\n\nEntsprechend der wachsenden Zahl von Autos, und von Befürchtungen von Nachteilen für den Industriestandort Wuppertal ohne eine moderne Verkehrsinfrastruktur, wurde die Bundesstraße 7 nach dem Zweiten Weltkrieg umfassend ausgebaut. Schnell wurden jedoch auch die Nachteile für die Bevölkerung spürbar -Lärm, Trennung, Qualitätsverluste für die Stadtzentren. Die Kreuzung am Alten Markt, an der sich die Bundesstraße mit der Schwebebahn und der Wupper kreuzt, zeigt besonders eindrucksvoll, wie stark Verkehrsflächen die Gestaltung des öffentlichen Raums in Wuppertal dominieren. Autos haben viel Raum um komfortabel und schnell das Ziel zu erreichen, Fußgänger und sogar die Wupper müssen in den Untergrund ausweichen.\n\nDie vier Schein-Akazien wurden sicher gepflanzt weil sie geringe Ansprüche an Bodenverhältnisse haben, Luftverschmutzungen, Streusalz und Hitze ertragen. Aber vielleicht auch um dem Betrachter für einen kurzen Moment erlauben, diesen Ort zu verlassen und sich in die ferne Ruhe der afrikanischen Savanne zu träumen.',
     image: '10- Scheinakazien.jpg',
     thumbnail: '10- Scheinakazien.jpg'
 },
 {
     id: 'birke',
+    number: 11,
     name: 'Birke',
     latinName: 'Betula pendula',
     lat: 51.274194,
@@ -206,7 +217,7 @@ export const trees: Tree[] = [
     maxAge: 150,
     habitat: undefined,
     features: 'Der Name Birke bedeutet „hellschimmernd" oder „weißglänzend". Die weiße Farbe des Birkenstammes kommt vom Inhaltsstoff Betulin, der die Rinde verrottungsbeständig und wasserundurchlässig macht. Rinde wurde als Papierersatz oder als Dachmaterial eingesetzt, Birkenteer zur Abdichtung von Fässern, Birkenpech als Klebemittel. Die Birke ist der erste Baum, der im Frühjahr ergrünt, und steht symbolisch für das Frühlingserwachen.',
-    description: 'Birken kann man leicht erkennen -an ihrer leuchtend weiße Rinde! Die haben sie um Sonneneinstrahlung zu reflektieren und Temperaturschwankungen -und damit die Gefahr von Rissbildungen zu vermeiden.\nDieses Prinzip der natürlichen Kühlung ist auch für Städte der Zukunft wegweisend. Angesichts des Klimawandels und zunehmender Hitzeperioden werden Städte immer stärker von Überhitzung bedroht. Beton- und Asphaltflächen speichern Wärme, während die Versiegelung des Bodens Verdunstungskühlung verhindert. Auch die Strategie der Birke wurde in Computersimulationen getestet: Weiße Oberflächen, z.B. Dächer waren die beste Art, die Temperatur in Städten an heißen Tagen zu reduzieren.\nBis ein Material gefunden ist, welches so effektiv funktioniert wie die Rinde der Birke, bleiben vielleicht urbane Grünflächen, wie z.B. die Uferstreifen der Wupper hier am Rosenau Ufer bevorzugte Maßnahmen gegen die Überhitzung von Städten. Sie sind außerdem Erholungsorte und Lebensraum für Flora und Fauna, Luftschneisen, fördern Verdunstungskühlung und reinigen die Luft.',
+    description: 'Birken kann man leicht erkennen -an ihrer leuchtend weiße Rinde! Die haben sie um Sonneneinstrahlung zu reflektieren und Temperaturschwankungen -und damit die Gefahr von Rissbildungen zu vermeiden.\n\nDieses Prinzip der natürlichen Kühlung ist auch für Städte der Zukunft wegweisend. Angesichts des Klimawandels und zunehmender Hitzeperioden werden Städte immer stärker von Überhitzung bedroht. Beton- und Asphaltflächen speichern Wärme, während die Versiegelung des Bodens Verdunstungskühlung verhindert. Auch die Strategie der Birke wurde in Computersimulationen getestet: Weiße Oberflächen, z.B. Dächer waren die beste Art, die Temperatur in Städten an heißen Tagen zu reduzieren. In Los Angeles wurden Straßen mit weißem Belag versehen und weiße Dachziegen bezuschusst -und scheiterten an haltbarem und kostengünstigen Material.\n\nBis ein Material gefunden ist, welches so effektiv funktioniert wie die Rinde der Birke, bleiben vielleicht urbane Grünflächen, wie z.B. die Uferstreifen der Wupper hier am Rosenau Ufer bevorzugte Maßnahmen gegen die Überhitzung von Städten. Sie sind außerdem Erholungsorte und Lebensraum für Flora und Fauna, Luftschneisen, fördern Verdunstungskühlung und reinigen die Luft.',
     image: '11- Birke.jpg',
     thumbnail: '11- Birke.jpg'
 }

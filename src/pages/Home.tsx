@@ -74,20 +74,29 @@ function Home() {
       </div>
 
       <section className="mb-12">
-        <p className="text-gray-700 w-1/2 max-lg:w-3/4 max-sm:w-full mb-8 font-bold">
-          Der Google Tree Wuppertal ist eine lebensgroße Skulptur eines aus Google Maps 
-          extrahierten Baums in Wuppertal, die im Winter 2024 auf den Fußwegen in der 
-          Nähe der Architekturfakultät am Campus Haspel installiert wird. In Zusammenarbeit 
-          mit Freiluft dient diese Skulptur als Vorschau auf eine größere Biennale, die für 
-          den Sommer 2026 geplant ist.
-        </p>
+        <div className="text-gray-700 w-1/2 max-lg:w-3/4 max-sm:w-full mb-8 font-bold space-y-4">
+          <p>
+            Entdecken Sie die Skulptur „Google Tree" von Certain Measures und Clement Valla am Haspel in Wuppertal -in Verbindung mit einer Baumroute, die sie mit der Schwebebahn einmal quer durch Wuppertal führt, immer entlang von Schwebebahn und Wupper.
+          </p>
+          <p>
+            Bäume sind über lange Zeiträume hinweg stille Zeugen des Wandels. Unsere Baumroute lässt Sie die Stadt aus der Perspektive von ausgewählten Bäumen entdecken – eine Reise durch Vergangenheit, Gegenwart und Zukunft Wuppertals. 
+          </p>
+          <p>
+            Schwebebahnticket kaufen - und Bäume finden!
+          </p>
+          <p>
+            Die lebensgroße Skulptur eines aus Google Maps stammenden Baums in Wuppertal dient als Vorschau auf eine größere Biennale, die der Verein <a href="https://freiluft-wuppertal.de/" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800 underline">FREILUFT Wuppertal</a> für den Sommer 2026 in WUppertal plant.
+          </p>
+        </div>
         <div>
-          <p className="text-sm text-gray-500 mb-2">in Zusammenarbeit mit</p>
-          <img 
-            src="/freiluft.png" 
-            alt="Freiluft - Festival für Kunst + Stadttransformation" 
-            className="h-16" 
-          />
+          <p className="text-sm text-gray-500 mb-2">iEine Veranstaltung von</p>
+          <a href="https://freiluft-wuppertal.de/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="/freiluft.png" 
+              alt="Freiluft - Festival für Kunst + Stadttransformation" 
+              className="h-16" 
+            />
+          </a>
         </div>
       </section>
 
