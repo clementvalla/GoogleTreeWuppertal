@@ -19,13 +19,14 @@ export class MapService {
 
   async initialize(element: HTMLElement, trees: Tree[], onTreeSelect: (tree: Tree) => void): Promise<void> {
     try {
-      this.google = await mapLoader.load();
-      if (!this.google) throw new Error('Failed to load Google Maps');
+      const google = await mapLoader.load();
+      if (!google) throw new Error('Failed to load Google Maps');
+      this.google = google;
 
-      this.map = new this.google.maps.Map(element, DEFAULT_MAP_CONFIG);
+      this.map = new google.maps.Map(element, DEFAULT_MAP_CONFIG);
       
       // Add Schwebebahn path
-      this.schwebebahnPath = new this.google.maps.Polyline({
+      this.schwebebahnPath = new google.maps.Polyline({
         ...SCHWEBEBAHN_PATH_CONFIG,
         path: SCHWEBEBAHN_PATH,
         map: this.map
@@ -72,7 +73,10 @@ export class MapService {
                 GOOGLE_TREE_MARKER_CONFIG.anchorY
               )
             }
-          : DEFAULT_MARKER_ICON
+          : {
+              ...DEFAULT_MARKER_ICON,
+              labelOrigin: new this.google.maps.Point(0, 10)  // Changed to 10 to place below
+            }
       );
     }
 
@@ -92,7 +96,10 @@ export class MapService {
                 SELECTED_GOOGLE_TREE_MARKER_CONFIG.anchorY
               )
             }
-          : SELECTED_MARKER_ICON
+          : {
+              ...SELECTED_MARKER_ICON,
+              labelOrigin: new this.google.maps.Point(0, 15)  // Changed to 15 for selected state
+            }
       );
     }
 
@@ -101,7 +108,6 @@ export class MapService {
 
   private createMarkers(trees: Tree[], onTreeSelect: (tree: Tree) => void): void {
     if (!this.map || !this.google) return;
-    const google = this.google; // Local reference to avoid null checks
 
     this.clearMarkers();
 
@@ -111,22 +117,31 @@ export class MapService {
       const markerIcon = tree.id === 'google-tree' 
         ? {
             url: GOOGLE_TREE_MARKER_CONFIG.url,
-            scaledSize: new google.maps.Size(
+            scaledSize: new this.google.maps.Size(
               GOOGLE_TREE_MARKER_CONFIG.width,
               GOOGLE_TREE_MARKER_CONFIG.height
             ),
-            anchor: new google.maps.Point(
+            anchor: new this.google.maps.Point(
               GOOGLE_TREE_MARKER_CONFIG.anchorX,
               GOOGLE_TREE_MARKER_CONFIG.anchorY
             )
           }
-        : DEFAULT_MARKER_ICON;
+        : {
+            ...DEFAULT_MARKER_ICON,
+            labelOrigin: new this.google.maps.Point(0, 10)  // Changed to 10 to place below
+          };
 
       const marker = new google.maps.Marker({
         position,
         map: this.map,
         title: tree.name,
-        icon: markerIcon
+        icon: markerIcon,
+        label: tree.number ? {
+          text: tree.number.toString(),
+          color: '#000000',
+          fontSize: '14px',
+          fontWeight: 'bold'
+        } : undefined
       });
 
       marker.addListener('click', () => {
